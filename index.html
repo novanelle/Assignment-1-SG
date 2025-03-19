@@ -3,39 +3,60 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Orbital Launches Data</title>
+    <title>Orbital Launches & Space Travel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <style>
       .chart-container {
         position: relative;
         height: 570px;
+        margin-bottom: 30px; 
       }
       canvas {
         display: block;
         box-sizing: border-box;
       }
+      .facts-container {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        margin-top: 30px;
+        clear: both; 
+      }
+      .facts-p {
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
-    <h1>Trends In Space Travel </h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
-    <div class="row">
-      <div class="col-8 chart-container">           
-          <div>
-              <canvas id="myChart" width="570" height="570"></canvas>
-              <p class="text-center mt-3">Orbital Launches in 2024</p>
-          </div>
+    <div class="container">
+      <h1>Orbital Launches & Space Travel in 2024: A Record Breaking Year🚀</h1>
+      <p>2024 marked yet another milestone in space exploration, setting new records for both orbital launch attempts and successful missions. The United States, led by NASA, conducted the highest number of launches, further solidifying its role in space innovation.</p>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+      <div class="row clearfix">
+        <div class="col-8 chart-container">           
+            <div>
+                <canvas id="myChart" width="570" height="570"></canvas>
+                <p class="text-center mt-3">Orbital Launches in 2024</p>
+            </div>
+        </div>
+        <div class="col-4 chart-container">
+            <div>
+                <canvas id="myChart2" width="570" height="570"></canvas>
+                <p class="text-center mt-3">Orbital Launches by Country</p>
+                <p class="text-center mt-3">China comes to a close second with 68 launches, a step up from 2023.</p>
+            </div>
+        </div>
       </div>
-      <div class="col-4 chart-container">
-          <div>
-              <canvas id="myChart2" width="570" height="570"></canvas>
-              <p class="text-center mt-3">Orbital Launches by Country</p>
-          </div>
+      <div class="facts-container">
+        <h5>Historic Achievements in Human Spaceflight 👨‍🚀</h5>
+        <p class="facts-p">This year also witnessed extraordinary achievements in human spaceflight. On February 4th, Russian cosmonaut Oleg Kononenko made history by breaking the world record for time spent in space, reaching an astonishing 1,110 days—surpassing the previous record of 878 days set by Gennady Padalka.</p>
+        <p class="facts-p">Another significant moment came on September 11th, when the launch of Soyuz MS-26 brought the total number of astronauts in orbit to 19 simultaneously, the highest ever recorded.</p>
       </div>
     </div>
   </body>

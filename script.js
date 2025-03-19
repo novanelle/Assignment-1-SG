@@ -29,13 +29,26 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     options: {
+      plugins: {
+        legend: {
+          labels: {
+            color: 'black' // Change legend text color
+          }
+        }
+      },
       scales: {
         y: {
           beginAtZero: true,
-          stacked: true
+          stacked: true,
+          ticks: {
+            color: 'black' // Change y-axis label color
+          }
         },
         x: {
-          stacked: true
+          stacked: true,
+          ticks: {
+            color: 'black' // Change x-axis label color
+          }
         }
       }
     }
@@ -47,30 +60,34 @@ document.addEventListener('DOMContentLoaded', function () {
     data: {
       labels: ["China", "France", "Italy", "India", "Iran", "Japan", "North Korea", "Russia", "United States"],
       datasets: [{
-        data: [68, 1, 2, 5, 4, 7, 1, 17, 156,],
+        data: [68, 1, 2, 5, 4, 7, 1, 17, 156],
         backgroundColor: [
           'rgb(223, 64, 64)',
           'pink',
-          'olive',
+          'green',
           'orange',
           'dark green',
           'white',
           'black',
           'purple',
-          'blue',
+          'blue'
         ],
         borderColor: [
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(255, 99, 132, 1)'
+          'rgb(255, 230, 230)'
         ],
         borderWidth: 1
       }]
     },
     options: {
+      plugins: {
+        legend: {
+          labels: {
+            color: 'black' // Change legend text color
+          }
+        }
+      },
       maintainAspectRatio: true,
-      cutoutPercentage: 65,
+      cutoutPercentage: 65
     }
   });
 });

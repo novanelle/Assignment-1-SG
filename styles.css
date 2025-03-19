@@ -1,0 +1,51 @@
+.chart-container {
+    position: relative;
+    height: 570px;
+    margin-bottom: 30px; /* Add margin to the bottom of the chart containers */
+  }
+  canvas {
+    display: block;
+    box-sizing: border-box;
+
+  }
+  .facts-p {
+    padding: 3px;
+    font-family: Trebuchet MS;
+  }
+  h5 {
+    padding: 20px;
+    font-family: Trebuchet MS;
+    text-align: center;
+  }
+  p {
+ 
+    font-family: Trebuchet MS;
+  }
+
+  h1 {
+    font-family: Trebuchet MS;
+    font-weight: bold;
+  }
+
+  .facts-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 400px;
+  }
+
+  body {
+    font-family: Trebuchet MS;
+    background: url(stars.png);
+    background-color: blueviolet;
+  }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.labels {
+  text-color: black;
+}
